@@ -7,14 +7,14 @@ def check_api(url):
         print("Status code:", response.status_code)
 
         if response.status_code == 200:
-            print("API is working ✅")
+            print("API is working")
         else:
-            print("API returned a problem ⚠️")
+            print("API returned a problem")
 
     except requests.exceptions.Timeout:
         print("Request timed out ⏱")
     except requests.exceptions.ConnectionError:
-        print("Connection error ❌")
+        print("Connection error")
     except Exception as e:
         print("Unexpected error:", e)
 
